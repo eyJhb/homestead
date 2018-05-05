@@ -166,7 +166,7 @@ class MakeCommand extends Command
     protected function updateIpAddress($ip)
     {
         file_put_contents($this->basePath.'/Homestead.yaml', str_replace(
-            'ip: "192.168.10.10"', 'ip: "'.$ip.'"', $this->getHomesteadFile()
+            'ip: "192.168.10.11"', 'ip: "'.$ip.'"', $this->getHomesteadFile()
         ));
     }
 
